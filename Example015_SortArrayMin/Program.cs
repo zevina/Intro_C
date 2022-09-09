@@ -2,7 +2,7 @@
 
 int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1, 0};
 
-void PrintArray(int[] array)//вывод искходного массива в терминал
+void PrintArray(int[] array)//вывод исходного массива в терминал
 {
   int count = array.Length;
   for (int i = 0; i < count; i++)
