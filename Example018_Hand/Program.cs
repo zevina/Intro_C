@@ -33,7 +33,7 @@ void PrintImage(int[,] image)
     for (int j = 0; j < image.GetLength(1); j++)
     {
       //Console.Write($"{image[i,j]} ");
-      if (image[i,j] == 0)
+      if (image[i, j] == 0)
       {
         Console.Write(" ");
       }
@@ -42,7 +42,7 @@ void PrintImage(int[,] image)
         Console.Write("+");
       }
     }
-  Console.WriteLine();
+    Console.WriteLine();
   }
 }
 
@@ -51,10 +51,10 @@ void FillImage(int row, int col)
   if (pic[row, col] == 0)
   {
     pic[row, col] = 1;
-    FillImage(row-1, col);
-    FillImage(row, col-1);
-    FillImage(row+1, col);
-    FillImage(row, col+1);
+    FillImage(row - 1, col);
+    FillImage(row, col - 1);
+    FillImage(row + 1, col);
+    FillImage(row, col + 1);
   }
 }
 
